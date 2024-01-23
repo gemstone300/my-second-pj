@@ -1,6 +1,9 @@
+import dotenv from "dotenv";
 import express from "express";
 import productRouter from "./routes/products.router.js";
 import connect from "./schemas/index.js";
+
+dotenv.config();
 
 const app = express();
 const PORT = 4000;
